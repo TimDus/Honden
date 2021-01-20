@@ -128,7 +128,7 @@ public class DogRace extends Application implements IDogRace, Observer
     @Override
     public void readyPlayer()
     {
-        game.readyPlayer(playerNr);
+        game.readyPlayer();
     }
 
     @Override

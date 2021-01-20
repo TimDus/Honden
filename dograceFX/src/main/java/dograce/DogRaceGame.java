@@ -11,6 +11,8 @@ public class DogRaceGame implements IDogRaceGame
     private Player player;
     private Player opponent;
 
+    private boolean gameDone = false;
+
     @Override
     public void notifyWhenReady(int playerNr)
     {
@@ -29,13 +31,15 @@ public class DogRaceGame implements IDogRaceGame
     }
 
     @Override
-    public void endGame() {
-
+    public void endGame()
+    {
+        gameDone = true;
     }
 
     @Override
-    public void readyPlayer(int playerNr) {
-
+    public void readyPlayer()
+    {
+        player.ReadyStatus();
     }
 
     @Override

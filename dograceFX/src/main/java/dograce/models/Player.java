@@ -29,6 +29,17 @@ public class Player
     public void setDog(Dog dog){this.dog = dog;}
     public Dog getDog(){return dog;}
 
+    public Boolean ReadyStatus()
+    {
+        ready = !ready;
+        return ready;
+    }
+
+    public boolean getReady()
+    {
+        return ready;
+    }
+
     public Player(String Name, String Password)
     {
         playerName = Name;

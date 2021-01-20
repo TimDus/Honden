@@ -13,7 +13,7 @@ public interface IDogRaceGame
 
     public void endGame();
 
-    public void readyPlayer(int playerNr);
+    public void readyPlayer();
 
     public void saveDog(String name, Color color);
 
