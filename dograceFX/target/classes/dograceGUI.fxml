@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.SeparatorMenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dograce.DogRace">
+  <children>
+    <MenuBar prefHeight="25.0" prefWidth="780.0" VBox.vgrow="NEVER">
+      <menus>
+        <Menu mnemonicParsing="false" text="File">
+          <items>
+            <MenuItem mnemonicParsing="false" text="New" />
+            <MenuItem mnemonicParsing="false" text="Open…" />
+            <Menu mnemonicParsing="false" text="Open Recent" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Close" />
+            <MenuItem mnemonicParsing="false" text="Save" />
+            <MenuItem mnemonicParsing="false" text="Save As…" />
+            <MenuItem mnemonicParsing="false" text="Revert" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Preferences…" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Quit" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Edit">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Undo" />
+            <MenuItem mnemonicParsing="false" text="Redo" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Cut" />
+            <MenuItem mnemonicParsing="false" text="Copy" />
+            <MenuItem mnemonicParsing="false" text="Paste" />
+            <MenuItem mnemonicParsing="false" text="Delete" />
+            <SeparatorMenuItem mnemonicParsing="false" />
+            <MenuItem mnemonicParsing="false" text="Select All" />
+            <MenuItem mnemonicParsing="false" text="Unselect All" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Help">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About MyHelloApp" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <AnchorPane maxHeight="-1.0" maxWidth="-1.0" prefHeight="210.0" prefWidth="640.0" VBox.vgrow="ALWAYS">
+      <children>
+            <Label layoutX="23.0" layoutY="14.0" text="Playername" />
+            <Label layoutX="23.0" layoutY="58.0" text="Password" />
+            <Label layoutX="210.0" layoutY="17.0" text="Dogname" />
+            <Label layoutX="206.0" layoutY="61.0" text="DogColor" />
+            <ColorPicker fx:id="colorPicker" disable="true" layoutX="201.0" layoutY="85.0" />
+            <Button fx:id="connectButton" layoutX="503.0" layoutY="41.0" mnemonicParsing="false" onAction="#connect" text="Connect" />
+            <Button fx:id="registerButton" layoutX="134.0" layoutY="57.0" mnemonicParsing="false" onAction="#registerPlayer" text="Register" />
+            <Line endX="49.5" endY="7.0" layoutX="534.0" layoutY="312.0" startX="49.5" startY="37.0" />
+            <Label layoutX="600.0" layoutY="314.0" text="Finish" />
+            <Line endX="-524.5" endY="83.0" layoutX="545.0" layoutY="257.0" startX="86.5" startY="83.0" />
+            <Button fx:id="saveDogButton" disable="true" layoutX="340.0" layoutY="41.0" mnemonicParsing="false" onAction="#saveDog" text="Set Dog" />
+            <TextField fx:id="playerName" layoutX="22.0" layoutY="32.0" prefHeight="25.0" prefWidth="103.0" promptText="playername" />
+            <TextField fx:id="password" layoutX="22.0" layoutY="85.0" prefHeight="25.0" prefWidth="103.0" promptText="password" />
+            <TextField fx:id="dogName" disable="true" layoutX="201.0" layoutY="32.0" prefHeight="25.0" prefWidth="103.0" promptText="dogname" />
+            <Text layoutX="54.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Countdown:" />
+            <Text fx:id="countdownText" layoutX="136.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+            <Text layoutX="236.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mash right arrow when the game starts" />
+            <Button fx:id="readyButton" layoutX="516.0" layoutY="188.0" mnemonicParsing="false" onAction="#readyPlayer" text="Ready" />
+            <CheckBox disable="true" layoutX="516.0" layoutY="247.0" mnemonicParsing="false" text="Readyset" />
+      </children>
+    </AnchorPane>
+  </children>
+</VBox>
