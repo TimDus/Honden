@@ -11,11 +11,11 @@ public class Dog
     private double posX = 0;
     private int speed = 10;
 
-    public void setPlayerName(String name)
+    public void setDogName(String name)
     {
         dogName = name;
     }
-    public String getPlayerName()
+    public String getDogName()
     {
         return dogName;
     }

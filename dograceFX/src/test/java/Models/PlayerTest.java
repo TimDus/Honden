@@ -1,3 +1,5 @@
+package Models;
+
 import dograce.models.Player;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
