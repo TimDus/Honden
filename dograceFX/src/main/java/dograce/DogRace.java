@@ -114,6 +114,7 @@ public class DogRace extends Application implements IDogRace, Observer
         }
     }
 
+    //test
     @Override
     public void connect()
     {
