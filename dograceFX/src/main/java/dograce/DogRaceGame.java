@@ -55,4 +55,9 @@ public class DogRaceGame implements IDogRaceGame
     {
         return player.getDog().getPosX();
     }
+
+    public Player getPlayer()
+    {
+        return player;
+    }
 }
